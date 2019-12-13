@@ -18,5 +18,7 @@ attr_reader :artist
     @artist = artist
   end
 
+  def self.new_by_filename(file)
+  end
 
 end

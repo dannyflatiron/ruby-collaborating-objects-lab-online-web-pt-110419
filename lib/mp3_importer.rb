@@ -10,9 +10,13 @@ attr_accessor :path
 
   def files
   # @files ||= Dir.glob("#{path}/*.mp3") 
-  Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "a") }
-  binding.pry
+  #has to return an array of strings
+
+  Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
+  # binding.pry
   end
 
+  def import
 
+  end
 end
